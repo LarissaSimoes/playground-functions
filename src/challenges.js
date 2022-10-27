@@ -1,6 +1,12 @@
 // Desafio 1
-function compareTrue() {
-  // Começando o projeto!
+function compareTrue(nome, sobrenome) {
+  const Larissa = true;
+  const Simões = true;
+   if (nome == Larissa && sobrenome == Simões) {
+    return true;
+   } else {
+    return false;
+   }
 }
 
 // Desafio 2
