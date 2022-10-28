@@ -6,7 +6,7 @@ function compareTrue(nome, sobrenome) {
     return true;
    } else {
     return false;
-   }
+  }
 }
 
 // Desafio 2
@@ -16,17 +16,19 @@ function calcArea(base, altura) {
 
 // Desafio 3
 function splitSentence(string) {
-  return string.split(" ");
+  return string.split(' ');
 }
 
 // Desafio 4
 function concatName() {
-  // seu código aqui
-}
+     return 
+    }
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins, ties) {
+  let resultado;
+  resultado = (wins*3) + ties;
+  return resultado;
 }
 
 // Desafio 6
