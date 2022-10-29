@@ -20,8 +20,8 @@ function splitSentence(string) {
 }
 
 // Desafio 4
-function concatName() {
-     return 
+function concatName(frutas) {
+      return frutas[0], frutas[frutas.length - 1];
     }
 
 // Desafio 5
@@ -37,8 +37,14 @@ function highestCount() {
 }
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+function catAndMouse(mouse, cat1, cat2) {
+  if(Math.abs(mouse - cat1) < Math.abs(mouse - cat2)){
+    return 'cat1';
+  } else if(Math.abs(mouse - cat1) === Math.abs(mouse - cat2)){
+    return 'os gatos trombam e o rato foge';
+  } else {
+    return 'cat2';
+  }
 }
 
 // Desafio 8
