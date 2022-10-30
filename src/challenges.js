@@ -20,8 +20,8 @@ function splitSentence(string) {
 }
 
 // Desafio 4
-function concatName(frutas) {
-      return frutas[0], frutas[frutas.length - 1];
+function concatName(array) {
+  return `${array[array.length - 1]}, ${array[0]}`;  
     }
 
 // Desafio 5
@@ -85,8 +85,17 @@ function decode(string) {
 }
 
 // Desafio 10
-function techList() {
-  // seu código aqui
+function techList(tecnologias, nome) {
+  let array = [];
+   if (tecnologias.length === 0){
+    return 'Vazio!';
+  }
+  tecnologias.sort();
+  for (let index = 0; index < tecnologias.lenght; index += 1){
+    let objeto = { tech: tecnologias[index], name: nome };
+    array.push(objeto); 
+  }
+  return array;
 }
 
 module.exports = {
