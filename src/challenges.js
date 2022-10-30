@@ -2,9 +2,9 @@
 function compareTrue(nome, sobrenome) {
   const Larissa = true;
   const Simões = true;
-   if (nome == Larissa && sobrenome == Simões) {
+  if (nome === Larissa && sobrenome === Simões) {
     return true;
-   } else {
+  } else {
     return false;
   }
 }
@@ -22,12 +22,12 @@ function splitSentence(string) {
 // Desafio 4
 function concatName(array) {
   return `${array[array.length - 1]}, ${array[0]}`;  
-    }
+}
 
 // Desafio 5
 function footballPoints(wins, ties) {
   let resultado;
-  resultado = (wins*3) + ties;
+  resultado = (wins * 3) + ties;
   return resultado;
 }
 
@@ -38,9 +38,9 @@ function highestCount() {
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
-  if (Math.abs(mouse - cat1) < Math.abs(mouse - cat2)){
+  if (Math.abs (mouse - cat1) < Math.abs (mouse - cat2)){
     return 'cat1';
-  } else if (Math.abs(mouse - cat1) === Math.abs(mouse - cat2)){
+  } else if (Math.abs (mouse - cat1) === Math.abs (mouse - cat2)){
     return 'os gatos trombam e o rato foge';
   } else {
     return 'cat2';
@@ -50,12 +50,12 @@ function catAndMouse(mouse, cat1, cat2) {
 // Desafio 8
 function fizzBuzz(array) {
   let arrayStrings = [];
-  for (let i = 0; i < array.length; i += 1){
-  if (array[i] % 3 === 0 && array[i] % 5 === 0){
+  for (let i = 0; i < array.length; i += 1) {
+  if (array[i] % 3 === 0 && array[i] % 5 === 0) {
   arrayStrings[i] = 'fizzBuzz';
-  }else if (array[i] % 3 === 0){
+  } else if (array[i] % 3 === 0) {
   arrayStrings[i] = 'fizz';
-  }else if (array[i] % 5 === 0){
+  } else if (array[i] % 5 === 0) {
   arrayStrings[i] = 'buzz';
   } else {
   arrayStrings[i] = 'bug!';
@@ -87,11 +87,11 @@ function decode(string) {
 // Desafio 10
 function techList(tecnologias, nome) {
   let array = [];
-   if (tecnologias.length === 0){
+   if (tecnologias.length === 0) {
     return 'Vazio!';
   }
   tecnologias.sort();
-  for (let index = 0; index < tecnologias.lenght; index += 1){
+  for (let index = 0; index < tecnologias.lenght; index += 1) {
     let objeto = { tech: tecnologias[index], name: nome };
     array.push(objeto); 
   }
